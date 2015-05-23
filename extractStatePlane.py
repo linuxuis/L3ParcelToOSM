@@ -48,10 +48,10 @@ try:
 				rdEND=tmp[2].rsplit(' ',1)[1].title().replace('Ave', 'AVENUE').replace('Av','AVENUE').replace('Cir','CIRCLE').replace('Cmn','COMMON').replace('Cor','CORNER').replace('Ct','COURT').replace('Dr','DRIVE').replace('Ext','EXTENSION').replace('Hts','HEIGHTS').replace('Ln','LANE').replace('Pl','PLACE').replace('St','STREET').replace('Rd','ROAD').replace('Rdg','RIDGE').replace('Sq','SQUARE').replace('Ter','TERRACE').replace('Tpke','TURNPIKE').replace('Trl','TRAIL').replace('Xing','CROSSING').title()
 				outAddr.write(tmp[1]+':'+rdBEG+' '+rdEND+':'+tmp[3].title()+':'+tmp[4]+'\n')
 				if DEBUG:
-					print (tmp[1]+':'+rdBEG+' '+rdEND+':'+tmp[3].title()+':'+tmp[4]+'\n')
+					print (tmp[0]+':'+rdBEG+' '+rdEND+':'+tmp[3].title()+':'+tmp[4]+'\n')
 				# Save state plane in other file for conversion, but check if in ft or meters, if meters, change to ft			
-				if tmp[1][:1] =='M':
-					statePlaneFt=str(int(tmp[0].split('_')[1]*oneMInFt)) + " " + str(int(tmp[1].split('_')[2]*oneMInFt))
+				if tmp[0][:1] =='M':
+					statePlaneFt=str(int(int(tmp[0].split('_')[1])*oneMInFt)) + " " + str(int(int(tmp[0].split('_')[2])*oneMInFt))
 				else: 
 					statePlaneFt=tmp[0][2:].replace('_',' ')
 				outStatePlane.write(statePlaneFt+'\n')
