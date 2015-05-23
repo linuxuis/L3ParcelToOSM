@@ -9,7 +9,7 @@ This code requires:
 
 # Install
 Simply download the scipts into a directory and follow the below istructions to execute. 
-Or view them on my blog on OpenStreetMaps. (xunilOS) 
+Or view them on my blog on [OpenStreetMaps](https://www.openstreetmap.org/user/xunilOS/diary/35076).
 
 # What each script does
 l3ToOSM.sh: This is the master script for executing the conversion and will call the below two scripts. 
