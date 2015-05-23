@@ -14,7 +14,7 @@ Or view them on my blog on OpenStreetMaps. (xunilOS)
 # What each script does
 l3ToOSM.sh: This is the master script for executing the conversion and will call the below two scripts. 
 
-extractStatePlane.py: This script extracts the state plane data from the csv file provided to l3ToOSM. It is required to extract the state plane data in order to convert it to lat and long values. It also converts shortened street names (ex. rd to road st to street). If there is any data missing in an entry for the L3 parcel data, it is omitted from the conversion. 
+extractStatePlane.py: This script extracts the state plane data from the csv file provided to l3ToOSM. It is required to extract the state plane data in order to convert it to lat and long values. It also converts shortened street names (ex. rd to road st to street). If there is any data missing in an entry for the L3 parcel data, it is omitted from the import. 
 
 csvToOSM.py: This script will take the collected data from the ESRI L3 Parcel data file and convert it into a JOSM importable file type (.osm xml file)
 
