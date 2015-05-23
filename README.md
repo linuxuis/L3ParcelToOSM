@@ -43,6 +43,7 @@ Head over to my [github project](https://github.com/linuxuis/L3ParcelToOSM) to d
 ## Export shapefile database to csv
 * With Libre Office Calc (or Microsoft Excel - untested) open the unzipped directory and look for a file named MXXXAssess.dbf (Should be the largest filesize) 
 * A popup will ask what character set to use - i selected the first one Western Europe (DOS/OS2-850/International) though you can select Unicode(UTF-8) as well.
+* Delete the columns so you are left with state_plane(LOC_ID),Housenumber(Addr_Num),street,city,zipcode
 * Click file -> save as 
 * Choose a directory to save the csv file (it may be best to use the same directory the scripts are in)
 * Make sure to select the Text CSV (.csv) file format
