@@ -54,7 +54,10 @@ rm -rf tmpAddressData.csv tmpLatLon.csv tmpLatLonFormatted.csv tmpStatePlane.csv
 
 # Run python script to export addresses as nodes
 
-python2.7 csvToOSM.py ${1} ${STATE} ${2}
+python2.7 csvToOSM.py tmpL3AddressData.csv ${STATE} "${2}"
+
+# Rename the file to the MXXXAssessName
+mv tmpL3AddressData.csv.osm ${1}.osm
 
 rm -rf tmpL3AddressData.csv
 
